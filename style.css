@@ -15,6 +15,7 @@ body {
     height: 50px;
     right: 0;
     top: 0;
+    margin-left: 100%;
 }
 .navBar {
     float: right;
@@ -39,20 +40,25 @@ body {
 
 }
  #footer {
-    left: 0;
-    bottom: 0;
+   
     display: inline-flex;
-    padding: 0%;
     width: 100%;
-    height: 50px;
+    padding-top: 15px;
     justify-content: space-evenly;
     text-align: center;
-    font-size: 12px;
+    font-size: 20px;
     background-color: #696435;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 
  }
+
+.footer{
+  height: 100px;
+  background-color: #696435;
+  display: inline-block;
+ }
+
  p {
    font-weight: 800;
    justify-content: center;
@@ -78,7 +84,6 @@ button {
     text-align: center;
     background-color: #696435;
     border-style: outset;
-    border-radius: 25%;
     color: white;
     padding: 10px;
 }
@@ -122,4 +127,63 @@ image {
     
     padding: 1px;
     margin-left: 20%;
+}
+
+.flexContainer {
+  height: auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.workGrid{
+  margin: 0px 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "BurnNEarn GreaterCharlotteSPCA";
+    text-align: center;
+    padding: 50%;
+    
+}
+
+.projectButton {
+  text-align: center;
+  padding: 1%;
+  height: 50%;
+  margin-bottom: 20%;
+}
+
+.skillBox{
+
+  border: #696435 solid 2px;
+}
+*,
+*::before, 
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.liFooter {
+  text-decoration: none;
+  display: inline-flex;
+  padding: 40px;
+
+}
+
+@media only screen and (max-width: 600) {
+  .flexContainer {
+    flex-direction: column;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "BurnNEarn"
+    "Greater CharlotteSPCA"
+    ;
+  }
+
 }

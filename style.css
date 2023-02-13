@@ -157,8 +157,8 @@ image {
 }
 
 .skillBox{
-
-  border: #696435 solid 2px;
+ padding: 10px;
+  
 }
 *,
 *::before, 
